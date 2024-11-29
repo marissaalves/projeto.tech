@@ -1,14 +1,19 @@
 print("Digite as notas das disciplinas (separadas por espaço):")
-notas = list(map(float, input().split()))
+try:
+    notas = list(map(float, input().split()))
+    
+    if not notas:  
+        print("Nenhuma nota foi inserida. Tente novamente.")
+    else:
+        media = sum(notas) / len(notas)
 
-media = sum(notas) / len(notas)
+        print(f"\nA média do aluno é: {media:.2f}")
 
-print(f"A média do aluno é: {media:.2f}")
-
-if media >= 7:
-    print("Aluno aprovado! 🎉")
-elif 5 <= media < 7:
-    print("Aluno em recuperação. 📚")
-else:
-    print("Aluno reprovado. 😢")
-
+        if media >= 7:
+            print("Situação: Aluno aprovado! 🎉")
+        elif 5 <= media < 7:
+            print("Situação: Aluno em recuperação. 📚")
+        else:
+            print("Situação: Aluno reprovado. 😢")
+except ValueError:
+    print("Entrada inválida. Certifique-se de digitar apenas números separados por espaço.")
