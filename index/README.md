@@ -1,9 +1,9 @@
-# Solicitar ao usuário que insira as notas das disciplinas
+ Solicitar ao usuário que insira as notas das disciplinas
 
-# Calcular a média das notas
+ Calcular a média das notas
 
-# Exibir a média calculada
+ Exibir a média calculada
 
-# Verificar a situação do aluno (aprovado, recuperação ou reprovado)
+ Verificar a situação do aluno (aprovado, recuperação ou reprovado)
 
-# Exibir a situação do aluno com base na média
+ Exibir a situação do aluno com base na média
